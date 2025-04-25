@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rescisão Salarial</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Rescisão</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
-    <h1>Ola, a todos</h1>
+  <div class="container">
+    <h1>Calculadora de Rescisão Trabalhista</h1>
+    <div class="form-group">
+      <label for="salario">Salário mensal (R$):</label>
+      <input type="number" id="salario" placeholder="Digite o salário">
+    </div>
+    <div class="form-group">
+      <label for="meses">Meses trabalhados:</label>
+      <input type="number" id="meses" placeholder="Digite o número de meses">
+    </div>
+    <div class="form-group">
+      <label for="aviso">Aviso prévio trabalhado?</label>
+      <select id="aviso">
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+    </div>
+    <button onclick="calcularRescisao()">Calcular</button>
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
